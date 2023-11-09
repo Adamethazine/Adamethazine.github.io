@@ -41,21 +41,25 @@ function draw() {
     rystet++;
     if(rystet > 30);
     rystet = 0;
+    r = random(0, 255);
+    g = random(0, 255);
+    b = random(0, 255);
   }
   
   // Vis timeren i midten af skærmen
+  //textSize(20);
+  //text('ANTAL ENGLEHOP: ', width / 5, height / 4);
   fill(0);
-  textSize(20);
-  text('ANTAL ENGLEHOP: ', width / 2, height / 2);
- 
+
   push();
-  textSize(100);
-  text(timer, width/2, height / 2 + 150);
+  fill(r,g,b);
+  textSize(300);
+  text(timer, width/3 - 30, height / 2+100);
   pop();
 
   push();
-  textSize(20);
-  text('LAV ENGLEHOP' , width / 2, 100);
+  textSize(30);
+  text('LAV ENGLEHOP' , width / 6 - 15, 75);
   pop();
   
 }
