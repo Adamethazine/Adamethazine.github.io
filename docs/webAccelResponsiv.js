@@ -33,7 +33,7 @@ function draw() {
   background(255, 255, 255);
   strokeWeight(10);
 
-  if (accelerationX > 20) {
+  if (accelerationX > 70) {
     if (rystet % 2 == 0) {
       ned = !ned;
       timer++;
