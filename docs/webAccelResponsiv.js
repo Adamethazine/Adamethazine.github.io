@@ -54,7 +54,7 @@ function draw() {
   
 
   push();
-  textAlign(CENTER);
+  textAlign(CENTER, CENTER);
   textSize(300);
   text(timer, width/3 - 30, height / 2+100);
   pop();
