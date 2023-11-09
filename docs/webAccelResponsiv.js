@@ -38,6 +38,9 @@ function draw() {
     if (rystet % 2 == 0) {
       ned = !ned;
       timer++;
+      if(rystet > 30) {
+        timer = 1;
+      }
     }
 
   }
@@ -46,9 +49,7 @@ function draw() {
     fill(0);
     text("Du har lavet 30 englehop", width/3 - 15, height/5);  
   }
-  if(rystet > 30) {
-    timer = 1;
-  }
+
   
   
   
