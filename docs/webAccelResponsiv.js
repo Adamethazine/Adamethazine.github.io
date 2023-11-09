@@ -47,7 +47,7 @@ function draw() {
     text("Du har lavet 30 englehop", width/3 - 15, height/5);  
   }
   if(rystet > 30) {
-    rystet = 1;
+    timer = 1;
   }
   
   
