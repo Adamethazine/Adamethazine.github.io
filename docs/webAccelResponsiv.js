@@ -24,14 +24,13 @@ function setup() {
   canvas.parent('#beholder');
   canvas.elt.style.width = '100%';
   canvas.elt.style.height = '100%';
-
   const parentDiv = select('#beholder').elt;
   const p = select('#test1').elt;
   parentDiv.insertBefore(canvas.elt, p);
 }
 
 function draw() {
-  background(255, 0, 0);
+  background(255, 255, 255);
   strokeWeight(10);
 
   if (accelerationX > 70) {
@@ -45,17 +44,18 @@ function draw() {
   }
   
   // Vis timeren i midten af skærmen
-  fill(255);
-  text('Antal Englehop: ', width / 4 - 40, height / 2);
+  fill(0);
+  textSize(20);
+  text('ANTAL ENGLEHOP: ', width / 2, height / 2);
  
-  push()
-  textSize(30);
-  text(timer, width/2, height / 2 + 100, )
-  pop()
+  push();
+  textSize(100);
+  text(timer, width/2, height / 2 + 150);
+  pop();
 
   push();
-  textSize(10);
-  text('Lav Englehop' , 30, 100);
+  textSize(20);
+  text('LAV ENGLEHOP' , width / 2, 100);
   pop();
   
 }
