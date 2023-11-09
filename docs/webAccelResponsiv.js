@@ -34,12 +34,12 @@ function draw() {
   strokeWeight(10);
 
   if (accelerationX > 70) {
+    rystet++;
     if (rystet % 2 == 0) {
       ned = !ned;
       timer++;
-      
     }
-    rystet++;
+
   }
  
   if(rystet == 30) {
