@@ -56,7 +56,7 @@ function draw() {
   text('Antal Englehop: ' + timer, width / 4 - 40, height / 2);
 
   push();
-  textSize(15);
+  textSize(10);
   text('Lav 30 Englehop' , 30, 100);
   pop();
   
