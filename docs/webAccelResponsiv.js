@@ -33,33 +33,34 @@ function draw() {
   background(255, 255, 255);
   strokeWeight(10);
 
-  if (accelerationX > 70) {
+  if (accelerationX > 20) {
     if (rystet % 2 == 0) {
       ned = !ned;
-      timer++; // Øg timeren hver gang rystet er lige
+      timer+1;
+      
     }
     rystet++;
-    if(rystet > 30);
-    rystet = 0;
-    r = random(0, 255);
-    g = random(0, 255);
-    b = random(0, 255);
+  }
+ 
+  if(rystet == 30) {
+    fill(0);
+    text("Du har lavet 30 englehop", width/3 - 15, height/5);  
+  }
+  if(rystet > 30) {
+    rystet = 1;
   }
   
-  // Vis timeren i midten af skærmen
-  //textSize(20);
-  //text('ANTAL ENGLEHOP: ', width / 5, height / 4);
-  fill(0);
+  
+  
 
   push();
-  fill(r,g,b);
   textSize(300);
   text(timer, width/3 - 30, height / 2+100);
   pop();
 
   push();
   textSize(30);
-  text('LAV ENGLEHOP' , width / 6 - 15, 75);
+  text('LAV 30 ENGLEHOP' , width / 6 - 30, 75);
   pop();
   
 }
