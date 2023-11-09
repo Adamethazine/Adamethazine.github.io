@@ -55,7 +55,7 @@ function draw() {
 
   push();
   textSize(10);
-  text('Lav 30 Englehop' , 30, 100);
+  text('Lav Englehop' , 30, 100);
   pop();
   
 }
