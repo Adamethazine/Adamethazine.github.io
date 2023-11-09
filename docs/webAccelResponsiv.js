@@ -10,10 +10,6 @@
 // tilføj knapper, og tilføj eventlistener til knappen, funktionskald
 // 10 spring til siden hurtigt nok - gør baggrunden helt hvid...
 
-let y = 10;
-let r = 200;
-let g = 180;
-let b = 0;
 let ned = true;
 let rystet = 0;
 let flyttet = 0;
@@ -39,21 +35,23 @@ function draw() {
   strokeWeight(10);
 
   if (accelerationX > 70) {
-    r = random(0, 256);
-    g = random(0, 256);
-    b = random(0, 256);
     if (rystet % 2 == 0) {
       ned = !ned;
       timer++; // Øg timeren hver gang rystet er lige
     }
     rystet++;
-    if(rystet > 30)
-    rystet = 0
+    if(rystet > 30);
+    rystet = 0;
   }
   
   // Vis timeren i midten af skærmen
   fill(255);
-  text('Antal Englehop: ' + timer, width / 4 - 40, height / 2);
+  text('Antal Englehop: ', width / 4 - 40, height / 2);
+ 
+  push()
+  textSize(30);
+  text(timer, width/2, height / 2 + 100, )
+  pop()
 
   push();
   textSize(10);
