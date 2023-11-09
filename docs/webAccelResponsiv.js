@@ -36,7 +36,7 @@ function draw() {
   if (accelerationX > 20) {
     if (rystet % 2 == 0) {
       ned = !ned;
-      timer+1;
+      timer++;
       
     }
     rystet++;
